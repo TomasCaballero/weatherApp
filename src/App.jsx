@@ -78,18 +78,6 @@ function App() {
     <>
       <div className="App">
         <Temperatura ciudad={ciudad} pais={pais} icono={icono} clima={clima} temperatura={temperatura}/>
-        {/* <div className="temperatura">
-          <div className="ciudad">
-            <h3>{ciudad}, {pais}</h3>
-          </div>
-          <div className="icono">
-            <div id="icon"><img id="wicon" src={icono} alt="Weather icon" width='100px'/></div>
-            <div>{clima}</div>
-          </div>
-          <div className="temp">
-            Temperature: {temperatura} °C
-          </div>
-        </div> */}
         <div className="buscador">
           <form action="search" onSubmit={enter}>
             <input type="text" placeholder='Enter city' className='ciudad'/>
@@ -97,18 +85,8 @@ function App() {
           </form>
         </div>
         <Humedad humedad={humedad}/>
-        {/* <div className="humedad">
-          Humidity: {humedad}%
-        </div> */}
         <Velocidad viento={viento}/>
-        {/* <div className="velocidad">
-          Wind speed: {viento} Km/h
-        </div> */}
         <Minmax tempMin={tempMin} tempMax={tempMax}/>
-        {/* <div className="minMax">
-            <div className='tempMin'>Min: {tempMin} °C</div>
-            <div className="tempMax">Max: {tempMax} °C</div>
-        </div> */}
       </div>
     </>
   )
